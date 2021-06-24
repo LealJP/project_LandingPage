@@ -23,9 +23,9 @@
 </head>
 
 <body>
-    <!-- Menu -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <!-- Menu NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #292929">
+        <a class="navbar-brand" href="#">Menu</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
             aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
@@ -34,30 +34,30 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                    <a class="nav-link" href="siteCompleto.html">Home <span class="sr-only">(página atual)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#link-conteudo">Conteúdo</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+                        Fique por dentro
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Ação</a>
-                        <a class="dropdown-item" href="#">Outra ação</a>
+                        <a class="dropdown-item" href="#texto-video">Vídeo aula</a>
+                        <a class="dropdown-item" href="#livros">Livros</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        <a class="dropdown-item" href="#duvidas">Pergunte</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Desativado</a>
+                    <a class="nav-link disabled" href="#contato">Contato</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
             </form>
         </div>
     </nav>
@@ -99,9 +99,9 @@
     <!-- /Carousel -->
 
     <!-- /Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" id="link-conteudo">
         <div class="container">
-            <h1 class="display-4">Título h1</h1>
+            <h1 class="display-4">HTML, CSS E JS</h1>
             <p class="lead">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.</p>
         </div>
     </div>
@@ -116,18 +116,18 @@
                     src="https://spzone-simpleprogrammer.netdna-ssl.com/wp-content/uploads/2018/07/programming-1-300x300.png"
                     alt="Imagem de capa do card">
                 <div class="card-body">
-                    <h5 class="card-title">Título do card</h5>
+                    <h5 class="card-title">Pesquise</h5>
                     <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma
                         introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
                     <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top"
+                <img class="card-img-top border-bottom"
                     src="https://blog.bit.ai/wp-content/uploads/2021/04/Programming-Asset-3-300x300.png"
                     alt="Imagem de capa do card">
                 <div class="card-body">
-                    <h5 class="card-title">Título do card</h5>
+                    <h5 class="card-title">Estude</h5>
                     <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a
                         um conteúdo adicional.</p>
                     <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
@@ -138,7 +138,7 @@
                     src="https://s3.amazonaws.com/ckl-website-static/wp-content/uploads/2017/08/devstart_banner-300x300.png"
                     alt="Imagem de capa do card">
                 <div class="card-body">
-                    <h5 class="card-title">Título do card</h5>
+                    <h5 class="card-title">Divirta-se</h5>
                     <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma
                         introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para
                         mostrar a altura igual, em ação.</p>
@@ -150,9 +150,10 @@
         <!-- /Cards -->
 
         <!-- Texto e vídeo -->
-        <div class="row mt-5 mb-5">
+        <div class="row mt-5 mb-5" id="texto-video">
             <div class="col-md-6 p-0">
-                <h2>Texto Lorem</h2>
+                <h2>Conheça o canal < thi.code!>
+                </h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia aliquid, officiis cum laboriosam
                     aperiam exercitationem corrupti ad, rerum, quisquam odio voluptates iure distinctio itaque autem
                     maiores. Quia dolorem officia adipisci.</p>
@@ -164,7 +165,7 @@
                     totam architecto!</p>
             </div>
             <div class="col-md-6 p-0">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_Z7fyBsZGy8"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -172,34 +173,74 @@
         </div>
         <!-- /Texto e Vídeo-->
 
-        <!-- Formulário -->
-        <div class="row">
+        <!-- Livros -->
+        <div class="container" id="livros">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2> Livros para se aprofundar</h2>
+                </div>
+            </div>
+            <br>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 p-0">
+                    <img src="assets/img/css-livro-maujor.jpg" class="border border-2 mx-auto d-block"
+                        style="width: 300px; height:350px" alt="Livro CSS3, autor Maujor">
+                </div>
+                <div class="col-md-6 p-0">
+                    <img src="assets/img/javascript-livro.jpg" class="border border-2 mx-auto d-block"
+                        style="width: 300px; height:350px"
+                        alt="Livro JavaScript O Guia Definitivo, autor David Flanagan">
+                </div>
+            </div>
+            <br><br>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-4 p-0">
+                    <img src="assets/img/html-css-livro-maujor.jpg" class="border border-2 mx-auto d-block"
+                        style="width: 300px; height:350px" alt="Livro Fundamentos de HTML5 e CSS3, autor Maujor">
+                </div>
+                <div class="col-md-4 p-0">
+                    <img src="assets/img/javascript-livro2.jpg" class="border border-2 mx-auto d-block"
+                        style="width: 300px; height:350px" alt="Livro JavaScript para iniciantes, autor John Bach">
+                </div>
+                <div class="col-md-4 p-0">
+                    <img src="assets/img/html5-livro-maujor.jpg" class="border border-2 mx-auto d-block"
+                        style="width: 300px; height:350px" alt="Livro HTML5o, autor Maujor">
+                </div>
+            </div>
+        </div>
+        <!-- /Livros -->
+        <br><br>
+
+        <!-- Formulário Duvidas-->
+        <div class="row" id="duvidas">
             <div class="col-md-12 text-center">
-                <h4>Quer saber mais?!?</h4>
+                <h3>Quer saber mais?!?</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <form>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Endereço de email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="nome@exemplo.com">
+                        <label for="email">Endereço de email</label>
+                        <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com"
+                            onkeyup="validaEmail()">
                     </div>
+                    <div id="txtEmail"></div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">Linguagem de maior interesse</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <label for="assuntoSelect">Linguagem de maior interesse</label>
+                        <select class="form-control" id="assuntoSelect">
                             <option>HTML</option>
                             <option>CSS</option>
                             <option>JAVA SCRIPT</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">O que quer saber</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="assunto">O que quer saber</label>
+                        <textarea class="form-control" id="assunto" rows="3" onkeyup="validaAssunto()"></textarea>
                     </div>
+                    <div id="txtAssunto"></div>
                     <div class="form-group d-flex justify-content-end">
-                        <button class="btn btn-outline-success">Enviar</button>
+                        <button class="btn btn-outline-dark" onclick="enviar()">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -208,70 +249,78 @@
     </div>
 
     <!-- Footer -->
-    <div style="width: 100%; height: 330px">
-        <div id="container">
-            <div style="width: 100%; height: 280px; background-color: #292929">
-                <div style="width: 14%; height: 280px;  position: relative; left: 8%;
+
+    <div style="width: 100%; height: 330px" id="contato">
+        <div style="width: 100%; height: 280px; background-color: #292929">
+            <div style="width: 14%; height: 280px;  position: relative; left: 8%;
                 top: 30px"> <a style=" font-size: 35px; color: #f44336;" href="#">BBbootstrap</a>
-                    <p style="color: gray; position: relative; top: 0px; font-size: 14.1px">Cool and Perfect Snippet
-                        code</p>
-                    <p style=" color: #aaa7a7; font-size: 16px">We create awesome code snippets that will help you in
-                        creating your own beautiful site. </p>
-                </div>
-                <div style="width: 14%;  height: 280px;  position: relative;   top: -235px; left: 29%">
-                    <p style="color: white;   font-size: 20px">Explore</p>
-                    <a style=" display: flex;  width: 90px;  height: 40px;  color: #aaa7a7; background-color: transparent;  border-top: 2px solid white;  position: relative; top:-10px"
-                        href="#">Home</a> <a
-                        style=" display: flex;  width: 90px;  height: 40px;  color: #aaa7a7; background-color: transparent;  border-top: 2px solid white;  position: relative; top:-10px"
-                        href="#">About</a> <a
-                        style=" display: flex;  width: 90px;  height: 40px;  color: #aaa7a7; background-color: transparent;  border-top: 2px solid white;  position: relative; top:-10px"
-                        href="#">Snippet</a> <a
-                        style=" display: flex;  width: 90px;  height: 40px;  color: #aaa7a7; background-color: transparent;  border-top: 2px solid white;  position: relative; top:-10px"
-                        href="#">Careers</a>
-                </div>
-                <div style=" width: 14%; height: 280px; position: relative; top: -515px; left: 42%">
-                    <p style=" color: white; font-size: 20px">Visit</p>
-                    <p style="color: #aaa7a7; font-size: 14px; margin-top: -10px">Lincoln House </p>
-                    <p style="color: #aaa7a7; font-size: 14px; margin-top: -10px">78 Bhulabhai Desai Road </p>
-                    <p style="color: #aaa7a7; font-size: 14px; margin-top: -10px">Mumbai 400 026 </p>
-                    <p style="color: #aaa7a7; font-size: 14px; margin-top: -10px">Phone: (22) 2363-3611 </p>
-                    <p style="color: #aaa7a7; font-size: 14px; margin-top: -10px">Fax: (22) 2363-0350 </p>
-                </div>
-                <div style=" width: 14%; height: 280px;position: relative; top: -800px; left: 59.5%">
-                    <p style="color: white; font-size: 20px">Legal</p> <a
-                        style="display: flex; width: 150px; height: 40px; color: #aaa7a7; background-color: transparent; border-top: 2px solid white;position: relative; top: -10px; margin-top: 7px"
-                        href="#">Terms and Conditions</a>
-                    <a style="display: flex; width: 150px; height: 40px; color: #aaa7a7; background-color: transparent; border-top: 2px solid white;position: relative; top: -10px; margin-top: 7px"
-                        href="#">Private Policy</a>
-                </div>
-                <div style="position: relative;top: -1080px; left: 78%; width: 14%; height: 280px">
-                    <p style="color: white; font-size: 20px">Subscribe to US</p>
-                    <form> <input style=" color: white; position: relative; top: -20px" type="email"
-                            placeholder="Email"> </form> <a style=" position: relative; top: -10px"
-                        class="waves-effect waves-light">Subscribe</a>
-                    <p style="color: white; font-size: 20px">Connect With US</p>
-
-                    <a href="https://pt-br.facebook.com" target="blank">
-                        <i style="position: relative;top: -5px; margin-right: 10px;  color: white; cursor: pointer"
-                            class="fab fa-facebook-square fa-2x"></i>
-                    </a>
-                    <a href="https://www.linkedin.com" target="blank">
-                        <i style="position: relative;top: -5px; margin-right: 10px;  color: white; cursor: pointer"
-                            class="fab fa-linkedin fa-2x"></i>
-                    </a>
-                    <a href="https://twitter.com/home" target="blank">
-                        <i style="position: relative;top: -5px; margin-right: 10px;  color: white; cursor: pointer"
-                            class="fab fa-twitter-square fa-2x"></i>
-                    </a>
-
-                </div>
+                <p style="color: gray; position: relative; top: 0px; font-size: 14.1px">Cool and Perfect Snippet
+                    code</p>
+                <p style=" color: #aaa7a7; font-size: 16px">We create awesome code snippets that will help you in
+                    creating your own beautiful site. </p>
             </div>
-            <div style=" width: 100%; height: 50px; background-color: black; position: relative; top: -15px">
-                <p sytle="color: white; position: relative; top: 13px; left: 8%; width: 80%;color: #aaa7a7">
-                    &copy copyright 2019 BBbootstrap - All right reserved</p>
+            <div style="width: 14%;  height: 280px;  position: relative;   top: -235px; left: 29%">
+                <p style="color: white;   font-size: 20px">Explore</p>
+                <a style=" display: flex;  width: 90px;  height: 40px;  color: #aaa7a7; background-color: transparent;  border-top: 2px solid white;  position: relative; top:-10px"
+                    href="#">Home</a> <a
+                    style=" display: flex;  width: 90px;  height: 40px;  color: #aaa7a7; background-color: transparent;  border-top: 2px solid white;  position: relative; top:-10px"
+                    href="#">About</a> <a
+                    style=" display: flex;  width: 90px;  height: 40px;  color: #aaa7a7; background-color: transparent;  border-top: 2px solid white;  position: relative; top:-10px"
+                    href="#">Snippet</a> <a
+                    style=" display: flex;  width: 90px;  height: 40px;  color: #aaa7a7; background-color: transparent;  border-top: 2px solid white;  position: relative; top:-10px"
+                    href="#">Careers</a>
+            </div>
+            <div style=" width: 14%; height: 280px; position: relative; top: -515px; left: 42%">
+                <p style=" color: white; font-size: 20px">Visit</p>
+                <p style="color: #aaa7a7; font-size: 14px; margin-top: -10px">Lincoln House </p>
+                <p style="color: #aaa7a7; font-size: 14px; margin-top: -10px">78 Bhulabhai Desai Road </p>
+                <p style="color: #aaa7a7; font-size: 14px; margin-top: -10px">Mumbai 400 026 </p>
+                <p style="color: #aaa7a7; font-size: 14px; margin-top: -10px">Phone: (22) 2363-3611 </p>
+                <p style="color: #aaa7a7; font-size: 14px; margin-top: -10px">Fax: (22) 2363-0350 </p>
+            </div>
+            <div style=" width: 14%; height: 280px;position: relative; top: -800px; left: 59.5%">
+                <p style="color: white; font-size: 20px">Legal</p> <a
+                    style="display: flex; width: 150px; height: 40px; color: #aaa7a7; background-color: transparent; border-top: 2px solid white;position: relative; top: -10px; margin-top: 7px"
+                    href="#">Terms and Conditions</a>
+                <a style="display: flex; width: 150px; height: 40px; color: #aaa7a7; background-color: transparent; border-top: 2px solid white;position: relative; top: -10px; margin-top: 7px"
+                    href="#">Private Policy</a>
+            </div>
+            <div style="position: relative;top: -1080px; left: 78%; width: 14%; height: 280px">
+                <p style="color: white; font-size: 20px">Subscribe to US</p>
+                <form> <input style=" color: white; position: relative; top: -20px" type="email" placeholder="Email">
+                </form>
+                <a style=" position: relative; top: -10px; color: #aaa7a7 "
+                    class="btn btn-outline-secondary">Subscribe</a>
+                <p style="color: white; font-size: 20px">Connect With US</p>
+
+                <a href="https://pt-br.facebook.com" target="blank">
+                    <i style="position: relative;top: -5px; margin-right: 10px;  color: white; cursor: pointer"
+                        class="fab fa-facebook-square fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="blank">
+                    <i style="position: relative;top: -5px; margin-right: 10px;  color: white; cursor: pointer"
+                        class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://twitter.com/home" target="blank">
+                    <i style="position: relative;top: -5px; margin-right: 10px;  color: white; cursor: pointer"
+                        class="fab fa-twitter-square fa-2x"></i>
+                </a>
+
+            </div>
+        </div>
+        <div style=" width: 100%; height: 50px; background-color: black; position: relative; top: -15px">
+            <div class="container">
+                <div class="row p-0">
+                    <div class="col-md-12 p-0 d-flex justify-content-center" style="top:13px; color:white">
+                        <p>
+                            &copy copyright 2019 BBbootstrap - All right reserved
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <!-- /Footer -->
 
     <!-- JavaScript (Opcional) -->
@@ -285,6 +334,47 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-</body>
+    <!--<script src="assets/js/script.js"></script>-->
+    <script>
+        //variáveis globais
+        let email = document.querySelector('#email')
+        let emailOk = false
+        let assunto = document.querySelector('#assunto')
+        let assuntoOk = false
 
+        function validaEmail() {
+            let txtEmail = document.querySelector('#txtEmail')
+            if (email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) {
+                txtEmail.innerHTML = 'Email inválido'
+                txtEmail.style.color = 'red'
+                emailOk = false
+            } else {
+                txtEmail.innerHTML = 'Email válido'
+                txtEmail.style.color = 'green'
+                emailOk = true
+            }
+        }
+
+        function validaAssunto() {
+            let txtAssunto = document.querySelector('#txtAssunto')
+            if (assunto.value.length >= 255) {
+                txtAssunto.innerHTML = 'Texto muito grande, digite no máximo 255 caracteres' 
+                txtAssunto.style.color = 'red'
+                txtAssunto.style.display = 'block'
+            } else {
+                txtAssunto.style.display = 'none'
+                assuntoOk = true
+            }
+        }
+
+        function enviar() {
+            if (emailOk == true && assuntoOk==true) {
+                alert('Formulário enviado com sucesso!')
+                txtEmail.style.display = 'none'
+            } else {
+                alert('Preencha o formulário corretamente antes de enviar!')
+            }
+        }
+    </script>
+</body>
 </html>
